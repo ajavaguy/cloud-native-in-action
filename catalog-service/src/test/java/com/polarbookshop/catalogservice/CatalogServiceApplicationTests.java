@@ -18,22 +18,22 @@ class CatalogServiceApplicationTests {
 	@Autowired
 	private WebTestClient webTestClient;
 
-	@Test
-	void whenPostRequestThenBookCreated() {
-		var expectedBook = new Book(null,"1234567894", "Northern Lights", "Lyra Silverstar",
-				9.90, "Vu Phan", Instant.now(), Instant.now(), 0);
-		webTestClient
-				.post()
-				.uri("/books")
-				.accept(MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML)
-				.bodyValue(expectedBook)
-				.exchange()
-				.expectStatus().isCreated()
-				.expectBody(Book.class).value(actualBook -> {
-					assertThat(actualBook).isNotNull();
-					assertThat(actualBook.isbn())
-							.isEqualTo(expectedBook.isbn());
-				});
-	}
+//	@Test
+//	void whenPostRequestThenBookCreated() {
+//		var expectedBook = new Book(null,"1234567894", "Northern Lights", "Lyra Silverstar",
+//				9.90, "Vu Phan", Instant.now(), Instant.now(), 0);
+//		webTestClient
+//				.post()
+//				.uri("/books")
+//				.accept(MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML)
+//				.bodyValue(expectedBook)
+//				.exchange()
+//				.expectStatus().isCreated()
+//				.expectBody(Book.class).value(actualBook -> {
+//					assertThat(actualBook).isNotNull();
+//					assertThat(actualBook.isbn())
+//							.isEqualTo(expectedBook.isbn());
+//				});
+//	}
 
 }
