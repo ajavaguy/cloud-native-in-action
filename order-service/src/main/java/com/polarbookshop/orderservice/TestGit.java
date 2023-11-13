@@ -1,12 +1,12 @@
 package com.polarbookshop.orderservice;
 
 public class TestGit {
-    public boolean test() {
-        return true;
+    public String test() {
+        return "test";
     }
 
-    public boolean test2() {
-        return true;
+    public String test2() {
+        return "Test";
     }
 
     public boolean test3() {
