@@ -6,7 +6,7 @@ public class TestGit {
     }
 
     public boolean test2() {
-        return true;
+        return false;
     }
 
     public boolean test3() {
