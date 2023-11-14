@@ -12,8 +12,4 @@ public class TestGit {
     public boolean test4() {
         return true;
     }
-
-    public boolean test4() {
-        return true;
-    }
 }
