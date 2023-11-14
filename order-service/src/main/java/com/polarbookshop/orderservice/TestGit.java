@@ -9,7 +9,7 @@ public class TestGit {
         return true;
     }
 
-    public boolean test3() {
+    public boolean test4() {
         return true;
     }
 
