@@ -1,7 +1,7 @@
 package com.polarbookshop.orderservice;
 
 public class TestGit {
-    public boolean test() {
+    public boolean test1() {
         return true;
     }
 
