@@ -12,4 +12,8 @@ public class Test {
     public boolean test3() {
         return true;
     }
+
+    public boolean test4() {
+        return true;
+    }
 }
